@@ -97,6 +97,35 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .footer-note { margin: 25px 2px 0; color: #8a938d; font-size: 10px; line-height: 1.7; }
 .mobile-nav { display: none; }
 
+
+.login-page {
+  min-height: 100vh; display: grid; place-items: center; padding: 70px 20px 35px;
+  background: radial-gradient(ellipse at 50% 0%, rgb(217 240 116 / 16%), transparent 34rem), var(--paper);
+}
+.login-brand { position: absolute; top: 26px; left: clamp(20px, 5vw, 70px); }
+.login-card {
+  width: min(100%, 430px); padding: clamp(28px, 5vw, 44px); border: 1px solid var(--line);
+  border-radius: 28px; background: var(--surface); box-shadow: var(--shadow-soft);
+}
+.login-card h1 { margin: 13px 0 7px; font: 400 clamp(36px, 8vw, 48px)/1 Georgia, "Times New Roman", serif; letter-spacing: -.06em; }
+.login-card > p { color: var(--muted); font-size: 13px; line-height: 1.6; }
+.login-form { display: grid; gap: 10px; margin-top: 26px; }
+.login-form label { margin-top: 8px; color: #536159; font-size: 11px; font-weight: 700; }
+.login-form input {
+  width: 100%; min-height: 46px; padding: 0 13px; border: 1px solid #dfe4da;
+  border-radius: 11px; color: var(--ink); background: #fff; font: inherit; font-size: 13px;
+}
+.login-form input:focus { border-color: #739c59; outline: 3px solid rgb(115 156 89 / 18%); }
+.login-form button {
+  display: flex; justify-content: space-between; align-items: center; min-height: 48px; margin-top: 14px;
+  padding: 0 16px; border: 0; border-radius: 12px; color: white; background: var(--moss);
+  font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; transition: background .2s var(--ease-out), transform .2s var(--ease-out);
+}
+.login-form button:hover { background: var(--moss-dark); transform: translateY(-1px); }
+.form-error { padding: 10px 12px; border-radius: 10px; color: #923f32 !important; background: #faeae5; font-size: 12px !important; }
+.back-link { display: inline-block; margin-top: 23px; color: var(--moss); font-size: 11px; font-weight: 700; }
+.topbar-link { padding: 8px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--moss); background: var(--surface); font-size: 11px; }
+
 @media (max-width: 920px) {
   .app-frame { grid-template-columns: 76px minmax(0, 1fr); }
   .sidebar { align-items: center; padding-inline: 10px; }
