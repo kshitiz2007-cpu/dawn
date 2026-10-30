@@ -13,10 +13,11 @@ Audit result: the repository started with only a six-byte README. There were no 
 
 - [x] Establish Next.js App Router, strict TypeScript, and Tailwind CSS v4.
 - [x] Add semantic brand tokens and responsive student workspace shell.
-- [ ] Add student/admin route boundaries and accessible navigation primitives.
-- [x] Add Supabase SSR and browser client factories using public URL and publishable key only.
+- [x] Add accessible student navigation primitives; admin routes remain absent until permission enforcement exists.
+- [x] Add Supabase SSR/browser clients and request-time cookie refresh using URL and publishable key only.
+- [x] Add password sign-in and auth callback routes.
 - [x] Verify type checking, source lint, and production build locally.
-- [ ] Add route authentication and redirect handling after Supabase project configuration is available.
+- [ ] Live-test authentication and complete role-gated student/admin boundaries after Supabase project configuration and role schema are available.
 
 ## Later phases
 
