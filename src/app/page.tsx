@@ -49,7 +49,7 @@ export default function HomePage() {
       <main className="main">
         <div className="topbar">
           <div className="topbar-left"><span className="eyebrow">Student workspace</span><span aria-hidden="true">/</span><span>Overview</span></div>
-          <div className="topbar-right"><span>Personal learning space</span><span className="avatar" aria-label="Profile not connected">—</span></div>
+          <div className="topbar-right">{configured && <Link className="topbar-link" href="/login">Sign in</Link>}<span>Personal learning space</span><span className="avatar" aria-label="Profile not connected">—</span></div>
         </div>
 
         <div className="content">
