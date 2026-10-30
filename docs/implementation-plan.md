@@ -7,15 +7,16 @@
 - [x] Record conflicts and reusable modules.
 - [x] Prepare phased implementation plan.
 
-Audit result: this repository contains only a six-byte README. There are no existing routes, application components, dependency manifests, database migrations, or auth integration to preserve. The work starts from a clean foundation. No Supabase project configuration is present.
+Audit result: the repository started with only a six-byte README. There were no existing routes, application components, dependency manifests, database migrations, or auth integration to preserve. The work starts from a clean foundation. No Supabase project configuration is present.
 
 ## Phase 1: foundation
 
-- [ ] Establish Next.js App Router, strict TypeScript, and Tailwind CSS v4.
-- [ ] Add semantic brand tokens and responsive page shell.
+- [x] Establish Next.js App Router, strict TypeScript, and Tailwind CSS v4.
+- [x] Add semantic brand tokens and responsive student workspace shell.
 - [ ] Add student/admin route boundaries and accessible navigation primitives.
-- [ ] Add Supabase SSR configuration using public URL and publishable key only.
-- [ ] Verify type checking, lint, and production build.
+- [x] Add Supabase SSR and browser client factories using public URL and publishable key only.
+- [x] Verify type checking, source lint, and production build locally.
+- [ ] Add route authentication and redirect handling after Supabase project configuration is available.
 
 ## Later phases
 
